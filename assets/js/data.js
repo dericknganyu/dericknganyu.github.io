@@ -63,61 +63,61 @@ window.SITE_DATA = {
      Each object: { title, authors, venue, year, doi, arxiv, type }
      type: "journal" | "conference" | "preprint"
      Set doi / arxiv to null if not available.
-
-     IMPORTANT: All entries below are PLACEHOLDERS.
-     Replace with your real publications.
-     To add from BibTeX: extract title, authors, venue, year, doi.
   ============================================================= */
   publications: [
     {
-      // PLACEHOLDER — replace with real publication
-      title: "[PLACEHOLDER] Deep Learning-Based Reconstruction for Electrical Impedance Tomography",
-      authors: "Tanyu, D. N., [Co-authors TBD]",
-      venue: "Journal of Computational Physics",
+      title: "Deep Learning Based Reconstruction Methods for Electrical Impedance Tomography",
+      authors: "Denker, A., Margotti, F., Ning, J., Knudsen, K., Tanyu, D. N., Jin, B., Hauptmann, A., et al.",
+      venue: "Handbook of Numerical Analysis, Vol. 26, pp. 127–175",
+      year: 2025,
+      doi: "https://doi.org/10.1016/bs.hna.2025.09.003",
+      arxiv: "https://arxiv.org/abs/2508.06281",
+      type: "book-chapter"
+    },
+    {
+      title: "A Spatial Long-Term Load Forecast Using a Multiple Delineated Machine Learning Approach",
+      authors: "Lukong, T. K., Nganyu Tanyu, D., Nkongtchou, Y., Tatietse, T. T., Schulz, D.",
+      venue: "Energies, 18(10), 2484",
+      year: 2025,
+      doi: "https://doi.org/10.3390/en18102484",
+      arxiv: null,
+      type: "journal"
+    },
+    {
+      title: "Electrical Impedance Tomography: A Fair Comparative Study on Deep Learning and Analytic-Based Approaches",
+      authors: "Nganyu Tanyu, D., Ning, J., Hauptmann, A., Jin, B., Maass, P.",
+      venue: "In: Data-driven Models in Inverse Problems, De Gruyter, pp. 437–",
       year: 2024,
-      doi: null,   // e.g. "https://doi.org/10.xxxx/xxxxx"
-      arxiv: null, // e.g. "https://arxiv.org/abs/2401.xxxxx"
+      doi: "https://doi.org/10.1515/9783111251493",
+      arxiv: "https://arxiv.org/abs/2310.18636",
+      type: "book-chapter"
+    },
+    {
+      title: "Parameter Identification by Deep Learning of a Material Model for Granular Media",
+      authors: "Nganyu Tanyu, D., Michel, I., Rademacher, A., Kuhnert, J., Maass, P.",
+      venue: "GEM – International Journal on Geomathematics, 15(1), Article 13",
+      year: 2024,
+      doi: "https://doi.org/10.1007/s13137-024-00253-0",
+      arxiv: "https://arxiv.org/abs/2307.04166",
       type: "journal"
     },
     {
-      // PLACEHOLDER — replace with real publication
-      title: "[PLACEHOLDER] Physics-Informed Neural Networks for Inverse Problems in Continuum Mechanics",
-      authors: "Tanyu, D. N., [Co-authors TBD]",
-      venue: "Inverse Problems",
+      title: "Deep Learning Methods for Partial Differential Equations and Related Parameter Identification Problems",
+      authors: "Nganyu Tanyu, D., Ning, J., Freudenberg, T., Heilenkötter, N., Rademacher, A., et al.",
+      venue: "Inverse Problems, 39(10), 103001",
       year: 2023,
-      doi: null,
-      arxiv: null,
+      doi: "https://doi.org/10.1088/1361-6420/ace9d4",
+      arxiv: "https://arxiv.org/abs/2212.03130",
       type: "journal"
     },
     {
-      // PLACEHOLDER — replace with real publication
-      title: "[PLACEHOLDER] Learned Regularization for PDE-Based Parameter Identification",
-      authors: "Tanyu, D. N., [Co-authors TBD]",
-      venue: "SIAM Journal on Scientific Computing",
-      year: 2023,
-      doi: null,
-      arxiv: null,
-      type: "journal"
-    },
-    {
-      // PLACEHOLDER — replace with real publication
-      title: "[PLACEHOLDER] Neural Network Approaches to Ill-Posed Inverse Problems",
-      authors: "Tanyu, D. N., [Co-authors TBD]",
-      venue: "Proceedings of Applied Mathematics and Mechanics (PAMM)",
+      title: "Long Term Electricity Load Forecast Based on Machine Learning for Cameroon's Power System",
+      authors: "Lukong, T. K., Nganyu Tanyu, D., Tatietse, T. T., Schulz, D.",
+      venue: "Energy and Environment Research, 12(1), 1–45",
       year: 2022,
-      doi: null,
+      doi: "https://doi.org/10.5539/eer.v12n1p1",
       arxiv: null,
-      type: "conference"
-    },
-    {
-      // PLACEHOLDER — replace with real publication
-      title: "[PLACEHOLDER] Scientific Machine Learning for Engineering Applications",
-      authors: "Tanyu, D. N., [Co-authors TBD]",
-      venue: "arXiv Preprint",
-      year: 2024,
-      doi: null,
-      arxiv: null,
-      type: "preprint"
+      type: "journal"
     }
   ],
 

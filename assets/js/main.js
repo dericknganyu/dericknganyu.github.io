@@ -86,9 +86,10 @@
   ------------------------------------------------------------------ */
   function getBadgeClass(type) {
     var map = {
-      journal:    'badge-journal',
-      conference: 'badge-conference',
-      preprint:   'badge-preprint'
+      journal:      'badge-journal',
+      conference:   'badge-conference',
+      preprint:     'badge-preprint',
+      'book-chapter': 'badge-book-chapter'
     };
     return map[type] || 'badge-conference';
   }
