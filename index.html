@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       SEO Meta Tags
+       UPDATE: Replace [YOUR_GITHUB_USERNAME] with your actual
+       GitHub username in the og:url, og:image, and canonical tags.
+  ============================================================ -->
+  <title>Derick Nganyu Tanyu, PhD | Developer &amp; Research Scientist</title>
+  <meta name="description" content="Derick Nganyu Tanyu, PhD — Developer at SAP, former Postdoctoral Research Scientist at the University of Bremen. Specializing in scientific machine learning, inverse problems, physics-informed neural networks, and applied AI." />
+  <meta name="keywords" content="scientific machine learning, inverse problems, physics-informed neural networks, PINNs, EIT, electrical impedance tomography, SAP, University of Bremen, ZeTeM, industrial mathematics, deep learning, applied AI" />
+  <meta name="author" content="Derick Nganyu Tanyu" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph — UPDATE [YOUR_GITHUB_USERNAME] -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Derick Nganyu Tanyu, PhD | Developer &amp; Research Scientist" />
+  <meta property="og:description" content="Developer at SAP · Postdoctoral Research Scientist · Scientific Machine Learning &amp; Applied AI" />
+  <meta property="og:url"         content="https://[YOUR_GITHUB_USERNAME].github.io" />
+  <meta property="og:image"       content="https://[YOUR_GITHUB_USERNAME].github.io/assets/images/avatar.jpg" />
+  <meta property="og:locale"      content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:title"       content="Derick Nganyu Tanyu, PhD" />
+  <meta name="twitter:description" content="Developer at SAP · Research Scientist · Scientific Machine Learning &amp; Applied AI" />
+  <meta name="twitter:image"       content="https://[YOUR_GITHUB_USERNAME].github.io/assets/images/avatar.jpg" />
+
+  <!-- Canonical — UPDATE [YOUR_GITHUB_USERNAME] -->
+  <link rel="canonical" href="https://[YOUR_GITHUB_USERNAME].github.io" />
+
+  <!-- ============================================================
+       Inline SVG Favicon (monogram DT)
+       Replace href with a real .ico or .png if you have one.
+  ============================================================ -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%234f46e5'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='serif' font-size='16' font-weight='700' fill='white'%3EDT%3C/text%3E%3C/svg%3E" />
+
+  <!-- ============================================================
+       Google Fonts
+       Playfair Display — headings (serif, academic weight)
+       Inter           — body + UI (clean grotesque)
+       JetBrains Mono  — code, tags, badges
+  ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Dark mode flash prevention — must run synchronously before paint -->
+  <script src="assets/js/theme.js"></script>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+
+        <!-- Logo -->
+        <a href="#home" class="nav__logo" aria-label="Derick Nganyu Tanyu — Home">
+          Derick Tanyu
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav__links" role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#talks">Talks</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav__actions">
+          <!-- Dark Mode Toggle -->
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" type="button">
+            <!-- Sun icon (shown in dark mode) -->
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+            <!-- Moon icon (shown in light mode) -->
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+            </svg>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         HERO / HOME
+    ============================================================ -->
+    <section id="home" class="hero" aria-labelledby="hero-name">
+      <div class="container">
+        <div class="hero__content">
+
+          <span class="hero__eyebrow">PhD · Developer · Research Scientist</span>
+
+          <!-- UPDATE: Choose your preferred headline from the three options in README.md -->
+          <h1 class="hero__name" id="hero-name">Derick Nganyu<br />Tanyu</h1>
+
+          <p class="hero__tagline">
+            Bridging scientific machine learning, applied mathematics,<br />
+            and AI to solve complex real-world problems.
+          </p>
+
+          <div class="hero__roles" aria-label="Current affiliations">
+            <span class="hero__role-badge">SAP Private Cloud</span>
+            <span class="hero__role-badge">SEO AI ECT</span>
+            <span class="hero__role-badge">University of Bremen · ZeTeM</span>
+            <span class="hero__role-badge">Scientific ML</span>
+            <span class="hero__role-badge">Inverse Problems</span>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#research" class="btn btn-primary">
+              <!-- Atom icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 1-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg>
+              View Research
+            </a>
+            <a href="assets/pdf/cv.pdf" class="btn btn-secondary" download>
+              <!-- Document icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" /></svg>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact</a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero__social" aria-label="Social and professional profiles">
+            <!-- UPDATE: Replace href values with your actual profile URLs -->
+            <a href="mailto:your.email@example.com" class="social-link" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
+              <span>Email</span>
+            </a>
+            <a href="https://linkedin.com/in/[YOUR_LINKEDIN]" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <!-- LinkedIn SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/[YOUR_GITHUB_USERNAME]" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <!-- GitHub SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://scholar.google.com/citations?user=[YOUR_SCHOLAR_ID]" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+              <!-- Scholar cap icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+              <span>Scholar</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section id="about" class="section section--alt" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">About</span>
+          <h2 class="section-heading" id="about-heading">Background &amp; Motivation</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="about__layout">
+
+          <!-- Photo -->
+          <div class="about__photo-wrap">
+            <!-- UPDATE: Replace with <img src="assets/images/avatar.jpg" alt="Derick Nganyu Tanyu" class="about__photo"> when you have a photo -->
+            <div class="about__photo-placeholder" aria-label="Profile photo placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>
+              <span>Add your photo<br/>assets/images/avatar.jpg</span>
+            </div>
+          </div>
+
+          <!-- Bio -->
+          <div class="about__bio">
+            <p>
+              I am <strong>Derick Nganyu Tanyu</strong>, a researcher and technologist whose career spans telecommunications engineering, advanced mathematics, scientific computing, and applied AI. My work sits at the intersection of rigorous mathematical theory and practical technological impact — a space I have navigated across three countries and multiple disciplines.
+            </p>
+            <p>
+              My journey began in engineering: I studied <strong>Telecommunications Engineering</strong> at the University of Yaounde, Cameroon, and went on to work as a <strong>Consultant and Datacom Engineer</strong> at Huawei Technologies, building and optimizing complex communication infrastructure. This grounding in engineering gave me a deep appreciation for systems that must work reliably in the real world.
+            </p>
+            <p>
+              Drawn by the power of mathematics to describe and solve hard problems, I pursued an <strong>MSc in Mathematical Sciences</strong> at AIMS Ghana and then a <strong>PhD in Industrial Mathematics</strong> at the University of Bremen, Germany. My doctoral and postdoctoral research at <strong>ZeTeM (Centre for Industrial Mathematics)</strong> focused on scientific machine learning for inverse problems — learning how to reconstruct hidden quantities from indirect, noisy measurements, with applications in medical imaging and engineering.
+            </p>
+            <p>
+              My research introduced and explored deep learning approaches to classical problems in applied mathematics: how can neural networks learn the structure of physical systems governed by <strong>partial differential equations</strong>? How can we use data efficiently when we also know the physics? These questions led me to work on <strong>physics-informed neural networks</strong>, <strong>Electrical Impedance Tomography (EIT)</strong>, <strong>parameter identification</strong>, and regularization theory for ill-posed inverse problems.
+            </p>
+            <p>
+              Since January 2025, I have been a <strong>Developer at SAP</strong> in the Private Cloud organization, where I work within the SEO AI Expert &amp; Enablement Core Team. My focus is on AI experiments, technical enablement, and identifying cross-function efficiency opportunities using modern AI tools and automation. I am applying the same scientific rigor and curiosity I developed in research to the challenges of enterprise-scale AI.
+            </p>
+            <p>
+              What drives me is the belief that mathematics and AI, when developed and deployed thoughtfully, can transform how we understand and interact with complex systems — from the human body to industrial processes to large organizations. I am always interested in conversations about research, applied AI, and the science-industry interface.
+            </p>
+
+            <div class="about__highlights">
+              <h3>Quick Facts</h3>
+              <ul class="highlight-list">
+                <li>PhD in Industrial Mathematics, University of Bremen (Germany)</li>
+                <li>Research focus: scientific machine learning, inverse problems, PDEs, PINNs</li>
+                <li>Currently: Developer at SAP Private Cloud, SEO AI ECT team</li>
+                <li>Background in telecommunications engineering and mathematical sciences</li>
+                <li>Experience across academia, industry R&amp;D, and enterprise AI</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         EXPERIENCE
+    ============================================================ -->
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Career</span>
+          <h2 class="section-heading" id="experience-heading">Professional Experience</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="timeline" role="list">
+
+          <!-- SAP -->
+          <article class="timeline-item timeline-item--current" role="listitem">
+            <span class="timeline-date">January 2025 — Present</span>
+            <h3 class="timeline-title">Developer</h3>
+            <p class="timeline-org">SAP SE · Private Cloud · SEO AI Expert &amp; Enablement Core Team</p>
+            <div class="timeline-body">
+              <p>
+                Working within SAP's Private Cloud organization as part of the SEO AI Expert &amp; Enablement Core Team (ECT). My work spans AI experimentation, technical enablement, and the identification and development of cross-function efficiency use cases powered by AI and automation.
+              </p>
+              <p>
+                I support the design and evaluation of AI-driven workflows, contribute to internal knowledge-sharing initiatives around generative AI capabilities, and help translate research-level AI concepts into practical enterprise applications.
+              </p>
+            </div>
+            <div class="timeline-tags" aria-label="Technologies and areas">
+              <span class="tag">Enterprise AI</span>
+              <span class="tag">LLMs</span>
+              <span class="tag">AI Automation</span>
+              <span class="tag">Technical Enablement</span>
+              <span class="tag">Python</span>
+            </div>
+          </article>
+
+          <!-- Postdoc -->
+          <article class="timeline-item" role="listitem">
+            <span class="timeline-date">2022 — 2024</span>
+            <h3 class="timeline-title">Postdoctoral Research Scientist</h3>
+            <p class="timeline-org">University of Bremen · ZeTeM (Centre for Industrial Mathematics)</p>
+            <div class="timeline-body">
+              <p>
+                Conducted postdoctoral research in scientific machine learning with a focus on deep learning methods for inverse problems in imaging and continuum mechanics. Developed and analyzed neural network architectures tailored for physics-constrained learning tasks.
+              </p>
+              <p>
+                Contributed to research projects at the intersection of applied mathematics and machine learning, including physics-informed neural networks (PINNs), learned regularization methods, and neural operator approaches to PDE-based inference.
+              </p>
+            </div>
+            <div class="timeline-tags">
+              <span class="tag">Scientific ML</span>
+              <span class="tag">Inverse Problems</span>
+              <span class="tag">PINNs</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">PyTorch</span>
+            </div>
+          </article>
+
+          <!-- Research Scientist -->
+          <article class="timeline-item" role="listitem">
+            <span class="timeline-date">2019 — 2022</span>
+            <h3 class="timeline-title">Research Scientist (PhD Researcher)</h3>
+            <p class="timeline-org">University of Bremen · ZeTeM (Centre for Industrial Mathematics)</p>
+            <div class="timeline-body">
+              <p>
+                Doctoral research in industrial mathematics, investigating deep learning approaches for solving ill-posed inverse problems. Applied these methods to <strong>Electrical Impedance Tomography (EIT)</strong> — a medical imaging modality that reconstructs internal conductivity distributions from boundary measurements.
+              </p>
+              <p>
+                Developed theoretical and computational frameworks combining classical regularization theory with modern neural network methods, contributing to the emerging field of learned reconstruction for mathematical imaging.
+              </p>
+            </div>
+            <div class="timeline-tags">
+              <span class="tag">EIT</span>
+              <span class="tag">Medical Imaging</span>
+              <span class="tag">Regularization</span>
+              <span class="tag">Industrial Math</span>
+              <span class="tag">MATLAB</span>
+            </div>
+          </article>
+
+          <!-- Huawei -->
+          <article class="timeline-item" role="listitem">
+            <span class="timeline-date">Prior to 2019</span>
+            <h3 class="timeline-title">Consultant / Datacom Engineer</h3>
+            <p class="timeline-org">Huawei Technologies</p>
+            <div class="timeline-body">
+              <p>
+                Worked as a consultant and data communication engineer supporting the deployment, configuration, and optimization of telecommunications infrastructure. Gained hands-on experience in network engineering, system integration, and client-facing technical consulting.
+              </p>
+            </div>
+            <div class="timeline-tags">
+              <span class="tag">Telecommunications</span>
+              <span class="tag">Datacom</span>
+              <span class="tag">Network Engineering</span>
+              <span class="tag">Consulting</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         EDUCATION
+    ============================================================ -->
+    <section id="education" class="section section--alt" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Academic Training</span>
+          <h2 class="section-heading" id="education-heading">Education</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="timeline" role="list">
+
+          <!-- PhD -->
+          <article class="timeline-item" role="listitem">
+            <span class="timeline-date">2019 — 2023</span>
+            <h3 class="timeline-title">PhD in Industrial Mathematics</h3>
+            <p class="timeline-org">University of Bremen, Germany</p>
+            <div class="timeline-body">
+              <p>
+                Doctoral dissertation in industrial mathematics, focusing on deep learning-based reconstruction methods for inverse problems in imaging. Research conducted at ZeTeM (Centre for Industrial Mathematics) under the supervision of leading experts in applied mathematics and scientific computing.
+              </p>
+            </div>
+            <div class="timeline-tags">
+              <span class="tag">Industrial Mathematics</span>
+              <span class="tag">Inverse Problems</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Imaging</span>
+            </div>
+          </article>
+
+          <!-- MSc -->
+          <article class="timeline-item" role="listitem">
+            <span class="timeline-date">2017 — 2018</span>
+            <h3 class="timeline-title">MSc in Mathematical Sciences</h3>
+            <p class="timeline-org">African Institute for Mathematical Sciences (AIMS), Ghana</p>
+            <div class="timeline-body">
+              <p>
+                Intensive postgraduate program in mathematical sciences at one of Africa's premier mathematics institutes, covering applied mathematics, statistics, scientific computing, and mathematical modeling.
+              </p>
+            </div>
+            <div class="timeline-tags">
+              <span class="tag">Applied Mathematics</span>
+              <span class="tag">Mathematical Modeling</span>
+              <span class="tag">Scientific Computing</span>
+            </div>
+          </article>
+
+          <!-- MEng -->
+          <article class="timeline-item" role="listitem">
+            <span class="timeline-date">Prior to 2017</span>
+            <h3 class="timeline-title">MEng in Telecommunications Engineering</h3>
+            <p class="timeline-org">University of Yaounde I, Cameroon</p>
+            <div class="timeline-body">
+              <p>
+                Engineering degree in telecommunications, covering signal processing, network design, communication systems, and embedded systems engineering.
+              </p>
+            </div>
+            <div class="timeline-tags">
+              <span class="tag">Telecommunications</span>
+              <span class="tag">Signal Processing</span>
+              <span class="tag">Network Design</span>
+              <span class="tag">Engineering</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         RESEARCH / INTERESTS
+    ============================================================ -->
+    <section id="research" class="section" aria-labelledby="research-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Research</span>
+          <h2 class="section-heading" id="research-heading">Research &amp; Interests</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <!-- Research areas as tag chips -->
+        <div class="research__areas" role="list" aria-label="Research areas">
+          <span class="tag" role="listitem">Scientific Machine Learning</span>
+          <span class="tag" role="listitem">Inverse Problems</span>
+          <span class="tag" role="listitem">Partial Differential Equations</span>
+          <span class="tag" role="listitem">Physics-Informed Neural Networks</span>
+          <span class="tag" role="listitem">Electrical Impedance Tomography</span>
+          <span class="tag" role="listitem">Medical &amp; Scientific Imaging</span>
+          <span class="tag" role="listitem">Parameter Identification</span>
+          <span class="tag" role="listitem">Continuum Mechanics</span>
+          <span class="tag" role="listitem">Learned Regularization</span>
+          <span class="tag" role="listitem">Deep Learning for Science</span>
+          <span class="tag" role="listitem">Applied Enterprise AI</span>
+          <span class="tag" role="listitem">AI Automation</span>
+          <span class="tag" role="listitem">Digital Transformation</span>
+        </div>
+
+        <!-- Research statement -->
+        <blockquote class="research__statement">
+          My research investigates how machine learning can be made scientifically rigorous and physically meaningful — particularly for problems where we need to recover hidden information from indirect observations. This spans classical inverse problems in mathematical physics to modern deep learning approaches that respect the structure of the underlying physics.
+        </blockquote>
+
+        <!-- What I Do section -->
+        <div class="what-i-do">
+          <h3 class="what-i-do__heading">What I Do</h3>
+          <div class="what-i-do__grid">
+
+            <div class="wid-card">
+              <div class="wid-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 1-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg>
+              </div>
+              <h4 class="wid-card__title">AI for Scientific &amp; Engineering Problems</h4>
+              <p class="wid-card__desc">Developing machine learning methods that leverage physical laws and mathematical structure to solve problems in engineering, imaging, and the sciences.</p>
+            </div>
+
+            <div class="wid-card">
+              <div class="wid-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" /></svg>
+              </div>
+              <h4 class="wid-card__title">ML for Inverse Problems &amp; PDEs</h4>
+              <p class="wid-card__desc">Designing and analyzing neural network approaches for ill-posed inverse problems, including physics-informed methods, learned regularization, and data-driven PDE solvers.</p>
+            </div>
+
+            <div class="wid-card">
+              <div class="wid-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" /></svg>
+              </div>
+              <h4 class="wid-card__title">Applied AI in Enterprise Settings</h4>
+              <p class="wid-card__desc">Applying AI and automation to create efficiency, enable teams, and drive measurable impact within large-scale enterprise and cloud environments.</p>
+            </div>
+
+            <div class="wid-card">
+              <div class="wid-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z" /></svg>
+              </div>
+              <h4 class="wid-card__title">Bridging Research &amp; Real-World Impact</h4>
+              <p class="wid-card__desc">Translating mathematical and scientific insights into practical tools and solutions — connecting academic depth with engineering reality and technological transformation.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         PROJECTS
+    ============================================================ -->
+    <section id="projects" class="section section--alt" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Work</span>
+          <h2 class="section-heading" id="projects-heading">Selected Projects</h2>
+          <p class="section-subheading">A selection of research and applied AI projects.</p>
+        </div>
+        <!-- Projects are rendered dynamically from assets/js/data.js -->
+        <div class="projects-grid" id="projects-grid" aria-live="polite">
+          <!-- Populated by main.js from SITE_DATA.projects -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         PUBLICATIONS
+    ============================================================ -->
+    <section id="publications" class="section" aria-labelledby="publications-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Research Output</span>
+          <h2 class="section-heading" id="publications-heading">Publications</h2>
+          <p class="section-subheading">Peer-reviewed journal articles, conference papers, and preprints.</p>
+        </div>
+
+        <!-- Note about placeholders -->
+        <p class="publications-note">
+          <strong>Note:</strong> The entries below are placeholders. Update <code>assets/js/data.js</code> with your real publications. Items marked <em>[PLACEHOLDER]</em> should be replaced.
+        </p>
+
+        <!-- Publications rendered dynamically from assets/js/data.js -->
+        <div id="publications-list" aria-live="polite">
+          <!-- Populated by main.js from SITE_DATA.publications -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         TALKS
+    ============================================================ -->
+    <section id="talks" class="section section--alt" aria-labelledby="talks-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Speaking</span>
+          <h2 class="section-heading" id="talks-heading">Talks &amp; Presentations</h2>
+          <p class="section-subheading">Invited talks, contributed presentations, and workshop participation.</p>
+        </div>
+        <!-- Talks rendered dynamically from assets/js/data.js -->
+        <div id="talks-list" aria-live="polite">
+          <!-- Populated by main.js from SITE_DATA.talks -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CV
+    ============================================================ -->
+    <section id="cv" class="section cv-section" aria-labelledby="cv-heading">
+      <div class="container">
+        <div class="cv-card" role="complementary" aria-label="Download CV">
+          <div class="cv-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" /></svg>
+          </div>
+          <div class="cv-card__text text-center">
+            <h3 id="cv-heading">Curriculum Vitae</h3>
+            <p>Full academic and professional history, publications, and skills.</p>
+          </div>
+          <!-- UPDATE: Replace assets/pdf/cv.pdf with your actual CV file -->
+          <a href="assets/pdf/cv.pdf" class="btn btn-primary" download aria-label="Download CV as PDF">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" /></svg>
+            Download CV (PDF)
+          </a>
+          <!-- UPDATE: Set the last-updated date -->
+          <p class="cv-card__note">Last updated: [Month Year] — Replace with actual date</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section id="contact" class="section section--alt" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Get in Touch</span>
+          <h2 class="section-heading" id="contact-heading">Contact</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="contact__layout">
+
+          <!-- Intro text -->
+          <div class="contact__intro">
+            <h3>Let's Connect</h3>
+            <p>
+              I am open to conversations about research collaborations, applied AI projects, conference invitations, and opportunities at the intersection of science and technology.
+            </p>
+            <p>
+              The best way to reach me is via email or LinkedIn. I try to respond to all thoughtful inquiries.
+            </p>
+            <p class="text-subtle" style="margin-top: 1rem;">
+              For research enquiries or collaboration proposals, please include a brief description of your project or question. For speaking invitations, please share event details and the expected audience.
+            </p>
+          </div>
+
+          <!-- Contact links -->
+          <div class="contact__links">
+
+            <!-- UPDATE: Replace with your actual email address -->
+            <a href="mailto:your.email@example.com" class="contact-link" aria-label="Send email">
+              <div class="contact-link__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
+              </div>
+              <div class="contact-link__info">
+                <span class="contact-link__label">Email</span>
+                <span class="contact-link__value">your.email@example.com</span>
+              </div>
+            </a>
+
+            <!-- UPDATE: Replace with your actual LinkedIn profile URL -->
+            <a href="https://linkedin.com/in/[YOUR_LINKEDIN]" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <div class="contact-link__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div class="contact-link__info">
+                <span class="contact-link__label">LinkedIn</span>
+                <span class="contact-link__value">linkedin.com/in/[your-profile]</span>
+              </div>
+            </a>
+
+            <!-- UPDATE: Replace with your actual GitHub username -->
+            <a href="https://github.com/[YOUR_GITHUB_USERNAME]" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+              <div class="contact-link__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div class="contact-link__info">
+                <span class="contact-link__label">GitHub</span>
+                <span class="contact-link__value">github.com/[your-username]</span>
+              </div>
+            </a>
+
+            <!-- UPDATE: Replace with your actual Google Scholar profile URL -->
+            <a href="https://scholar.google.com/citations?user=[YOUR_SCHOLAR_ID]" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar profile">
+              <div class="contact-link__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+              </div>
+              <div class="contact-link__info">
+                <span class="contact-link__label">Google Scholar</span>
+                <span class="contact-link__value">View publications</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">
+          &copy; <span id="footer-year">2025</span> <strong>Derick Nganyu Tanyu</strong>. All rights reserved.
+        </p>
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts: data first (dependency), then main logic -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
